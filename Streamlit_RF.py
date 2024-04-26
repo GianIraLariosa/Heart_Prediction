@@ -4,7 +4,7 @@ from keras.models import load_model
 from sklearn.preprocessing import StandardScaler
 
 # Load the saved model
-model = load_model("heart_disease_model.h5")
+model = load_model("random_forest_model.h5")
 
 # Function to preprocess input data
 def preprocess_input(data):
