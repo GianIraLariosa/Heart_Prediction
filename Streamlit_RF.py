@@ -4,7 +4,7 @@ from keras.models import load_model
 from sklearn.preprocessing import StandardScaler
 
 # Load the saved model
-model = load_model("random_forest_model (2).h5")
+model = load_model("random_forest_model (2).h5", compile=False)
 
 # Function to preprocess input data
 def preprocess_input(data):
@@ -88,7 +88,7 @@ def main():
         result = "Heart Disease Present" if prediction > 0.5 else "No Heart Disease"
 
         # Display prediction result
-        st.write("Prediction:", prediction)
+        st.write("Prediction:", result)
 
 if __name__ == "__main__":
     main()
