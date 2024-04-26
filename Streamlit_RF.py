@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from keras.models import load_model
 from sklearn.preprocessing import StandardScaler
 
 # Load the saved model
